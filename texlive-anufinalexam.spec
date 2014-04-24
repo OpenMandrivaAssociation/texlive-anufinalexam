@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-anufinalexam
 Version:	20120417
-Release:	8
+Release:	9
 Summary:	LaTeX document shell for ANU final exam
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/anufinalexam/ANUfinalexam.tex
@@ -16,6 +16,7 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/anufinalexam.doc.
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
+Provides:		texlive-ANUfinalexam
 
 %description
 This LaTeX document shell is created for the standard
