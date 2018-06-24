@@ -5,7 +5,7 @@
 # catalog-license gpl
 # catalog-version undef
 Name:		texlive-anufinalexam
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	LaTeX document shell for ANU final exam
 Group:		Publishing
