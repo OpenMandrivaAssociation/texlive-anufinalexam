@@ -1,18 +1,12 @@
-# revision 26053
-# category Package
-# catalog-ctan /macros/latex/contrib/anufinalexam/ANUfinalexam.tex
-# catalog-date 2012-04-17 00:02:56 +0200
-# catalog-license gpl
-# catalog-version undef
 Name:		texlive-anufinalexam
-Version:	20190228
+Version:	26053
 Release:	1
 Summary:	LaTeX document shell for ANU final exam
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/anufinalexam/ANUfinalexam.tex
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/anufinalexam.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/anufinalexam.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/anufinalexam.r26053.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/anufinalexam.doc.r26053.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -30,7 +24,7 @@ University.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
