@@ -1,6 +1,6 @@
 Name:		texlive-anufinalexam
 Version:	26053
-Release:	1
+Release:	2
 Summary:	LaTeX document shell for ANU final exam
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/anufinalexam/ANUfinalexam.tex
