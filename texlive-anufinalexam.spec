@@ -1,33 +1,22 @@
-Name:		texlive-anufinalexam
-Version:	26053
-Release:	2
+%global tl_name anufinalexam
+%global tl_revision 26053
+
+Name:		texlive-%{tl_name}
+Version:	%{tl_revision}
+Release:	1
 Summary:	LaTeX document shell for ANU final exam
 Group:		Publishing
-URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/anufinalexam/ANUfinalexam.tex
-License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/anufinalexam.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/anufinalexam.doc.r%{version}.tar.xz
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/anufinalexam
+License:	gpl
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/anufinalexam.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/anufinalexam.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
+BuildSystem:	texlive
 BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Provides:		texlive-ANUfinalexam
+%texlive_base_requires
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-This LaTeX document shell is created for the standard
-formatting of final exams in The Australian National
-University.
+This LaTeX document shell is created for the standard formatting of
+final exams in The Australian National University.
 
-#-----------------------------------------------------------------------
-%files
-%doc %{_texmfdistdir}/doc/latex/anufinalexam/ANUfinalexam.tex
-%doc %{_texmfdistdir}/doc/latex/anufinalexam/README
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c -a1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar doc %{buildroot}%{_texmfdistdir}
